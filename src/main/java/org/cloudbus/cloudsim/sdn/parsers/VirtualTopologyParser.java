@@ -140,12 +140,13 @@ public class VirtualTopologyParser {
 				//CloudletScheduler clSch = new CloudletSchedulerTimeSharedMonitor(mips);
 				int vmId = SDNVm.getUniqueVmId();
 				
-				if(nodeType.equalsIgnoreCase("vm")){
+				if(nodeType.equalsIgnoreCase("vm") || nodeType.equalsIgnoreCase("user") || nodeType.equalsIgnoreCase("server")){
 					// Create VM objects						
 					SDNVm vm = new SDNVm(vmId, userId,mips,pes,ram,bw,size,"VMM", clSch, starttime, endtime);
 					vm.setName(nodeName2);
 					vm.setHostName(hostName);
 					vm.setOptionalDatacenters(optionalDatacenter);
+					vm.setMiddleboxType(nodeType);
 					vmList.put(dcName, vm);
 				}
 				else {

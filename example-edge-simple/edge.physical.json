@@ -1,24 +1,24 @@
 {
   "datacenters" : [
 	{
-	  "name": "edgedc"
-	  "type": "cloud",
+	  "name": "edgedc",
+	  "type": "cloud"
 	},
 	{
-	  "name": "edgedc2"
-	  "type": "cloud",
+	  "name": "edgedc2",
+	  "type": "cloud"
 	},
 	{
-	  "name": "netcloud"
-	  "type": "cloud",
+	  "name": "netcloud",
+	  "type": "cloud"
 	},
 	{
-	  "name": "internet"
-	  "type": "cloud",
+	  "name": "internet",
+	  "type": "cloud"
 	},
 	{
 	  "name": "net",
-	  "type": "network",
+	  "type": "network"
 	},
   ],
   "nodes" : [
@@ -29,7 +29,7 @@
       "upports" : 1,
       "downports" : 2,
       "bw" : 12500000,
-	  "datacenter": "net",
+	  "datacenter": "net"
     },
       {
       "name": "edge2gw",
@@ -38,7 +38,7 @@
       "upports" : 1,
       "downports" : 2,
       "bw" : 12500000,
-	  "datacenter": "net",
+	  "datacenter": "net"
     },
     {
       "name": "netcloudgw",

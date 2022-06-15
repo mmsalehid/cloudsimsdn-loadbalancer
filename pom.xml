@@ -83,5 +83,12 @@
             <artifactId>commons-math3</artifactId>
             <version>3.6.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.cloudbus.cloudsim</groupId>
+            <artifactId>cloudsim</artifactId>
+            <version>4.0</version>
+            <scope>system</scope>
+            <systemPath>/home/mehdi/Documents/EdgeComputing/cloudsim/modules/cloudsim/target/cloudsim-4.0.jar</systemPath>
+        </dependency>
     </dependencies>
 </project>

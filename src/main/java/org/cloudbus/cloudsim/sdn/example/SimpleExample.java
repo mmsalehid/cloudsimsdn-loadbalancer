@@ -73,7 +73,7 @@ public class SimpleExample {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
-		String policyName = "LFF";
+		String policyName = "MFF";
 		workloads = new ArrayList<String>();
 		
 		// Parse system arguments

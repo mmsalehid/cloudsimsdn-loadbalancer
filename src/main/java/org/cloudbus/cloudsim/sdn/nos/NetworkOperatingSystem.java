@@ -226,6 +226,7 @@ public abstract class NetworkOperatingSystem extends SimEntity {
 			Log.printLine(CloudSim.clock() + ": " + getName() + ".processVmCreateDynamic: Dynamic VM("+newVm+") creation succesful!");
 			if(newVm instanceof ServiceFunction)
 				sfcForwarder.processVmCreateDyanmicAck((ServiceFunction)newVm);
+
 		}
 		else {
 			// VM cannot be created here..

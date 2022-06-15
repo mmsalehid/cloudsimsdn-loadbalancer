@@ -1,25 +1,25 @@
 {
   "datacenters" : [
 	{
-	  "name": "edgedc"
-	  "type": "cloud",
+	  "name": "edgedc",
+	  "type": "cloud"
 	},
 	{
-	  "name": "edgedc2"
-	  "type": "cloud",
+	  "name": "edgedc2",
+	  "type": "cloud"
 	},
 	{
-	  "name": "netcloud"
-	  "type": "cloud",
+	  "name": "netcloud",
+	  "type": "cloud"
 	},
 	{
-	  "name": "internet"
-	  "type": "cloud",
+	  "name": "internet",
+	  "type": "cloud"
 	},
 	{
 	  "name": "net",
-	  "type": "network",
-	},
+	  "type": "network"
+	}
   ],
   "nodes" : [
       {
@@ -29,7 +29,7 @@
       "upports" : 1,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "net",
+	  "datacenter": "net"
     },
       {
       "name": "edge2gw",
@@ -38,7 +38,7 @@
       "upports" : 1,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "net",
+	  "datacenter": "net"
     },
     {
       "name": "netcloudgw",
@@ -47,7 +47,7 @@
       "upports" : 1,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "net",
+	  "datacenter": "net"
     },
     {
       "name": "internetgw",
@@ -56,7 +56,7 @@
       "upports" : 1,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "net",
+	  "datacenter": "net"
     },
     {
       "name": "inter1",
@@ -65,7 +65,7 @@
       "upports" : 0,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "net",
+	  "datacenter": "net"
     },
     {
       "name": "inter2",
@@ -74,7 +74,7 @@
       "upports" : 0,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "net",
+	  "datacenter": "net"
     },
 
   
@@ -85,7 +85,7 @@
       "upports" : 0,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "edgedc",
+	  "datacenter": "edgedc"
     },
     {
       "name": "edgecore",
@@ -94,7 +94,7 @@
       "upports" : 0,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "edgedc",
+	  "datacenter": "edgedc"
     },
     {
       "name": "edgeedge1",
@@ -103,7 +103,7 @@
       "upports" : 1,
       "downports" : 4,
       "bw" : 25000000,
-	  "datacenter": "edgedc",
+	  "datacenter": "edgedc"
     },
     {
       "name": "edgeedge2",
@@ -112,7 +112,7 @@
       "upports" : 1,
       "downports" : 4,
       "bw" : 25000000,
-	  "datacenter": "edgedc",
+	  "datacenter": "edgedc"
     },
     {
       "name": "edgeedge3",
@@ -121,7 +121,7 @@
       "upports" : 1,
       "downports" : 4,
       "bw" : 25000000,
-	  "datacenter": "edgedc",
+	  "datacenter": "edgedc"
     },
     {
       "name": "edgeuser1",
@@ -131,7 +131,7 @@
       "ram" : 10,
       "storage" : 100,
       "bw" : 25000000,
-	  "datacenter": "edgedc",
+	  "datacenter": "edgedc"
     },
      {
       "name": "edgeuser2",
@@ -141,7 +141,7 @@
       "ram" : 10,
       "storage" : 100,
       "bw" : 25000000,
-	  "datacenter": "edgedc",
+	  "datacenter": "edgedc"
     },
     {
       "name": "edgenode1",
@@ -151,7 +151,7 @@
       "ram" : 16384,
       "storage" : 2000,
       "bw" : 25000000,
-	  "datacenter": "edgedc",
+	  "datacenter": "edgedc"
     },
     {
       "name": "edgenode2",
@@ -161,7 +161,7 @@
       "ram" : 16384,
       "storage" : 2000,
       "bw" : 25000000,
-	  "datacenter": "edgedc",
+	  "datacenter": "edgedc"
     },
     {
       "name": "edgenode3",
@@ -171,7 +171,7 @@
       "ram" : 16384,
       "storage" : 2000,
       "bw" : 25000000,
-	  "datacenter": "edgedc",
+	  "datacenter": "edgedc"
     },
 	{
       "name": "edgenode4",
@@ -181,7 +181,7 @@
       "ram" : 16384,
       "storage" : 2000,
       "bw" : 25000000,
-	  "datacenter": "edgedc",
+	  "datacenter": "edgedc"
     },
     {
       "name": "edge2gw",
@@ -190,7 +190,7 @@
       "upports" : 0,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "edgedc2",
+	  "datacenter": "edgedc2"
     },
     {
       "name": "edge2core",
@@ -199,7 +199,7 @@
       "upports" : 1,
       "downports" : 4,
       "bw" : 25000000,
-	  "datacenter": "edgedc2",
+	  "datacenter": "edgedc2"
     },
     {
       "name": "edge2edge1",
@@ -208,18 +208,17 @@
       "upports" : 1,
       "downports" : 4,
       "bw" : 25000000,
-	  "datacenter": "edgedc2",
+	  "datacenter": "edgedc2"
     },
     {
       "name": "edgeuser3",
-      "type" : "host",
       "type" : "host",
       "pes" : 1,
       "mips" : 1000,
       "ram" : 512,
       "storage" : 1000,
       "bw" : 25000000,
-	  "datacenter": "edgedc2",
+	  "datacenter": "edgedc2"
     },
 	
 	
@@ -230,7 +229,7 @@
       "upports" : 0,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "netcloud",
+	  "datacenter": "netcloud"
     },
 	{
       "name": "netcloudcore",
@@ -239,7 +238,7 @@
       "upports" : 0,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "netcloud",
+	  "datacenter": "netcloud"
     },
     {
       "name": "netcloudedge1",
@@ -248,7 +247,7 @@
       "upports" : 1,
       "downports" : 4,
       "bw" : 25000000,
-	  "datacenter": "netcloud",
+	  "datacenter": "netcloud"
     },
     {
       "name": "netcloudedge2",
@@ -257,7 +256,7 @@
       "upports" : 1,
       "downports" : 4,
       "bw" : 25000000,
-	  "datacenter": "netcloud",
+	  "datacenter": "netcloud"
     },
     {
       "name": "netcloudhost1",
@@ -267,7 +266,7 @@
       "ram" : 10240,
       "storage" : 10000000,
       "bw" : 25000000,
-	  "datacenter": "netcloud",
+	  "datacenter": "netcloud"
     },
      {
       "name": "netcloudhost2",
@@ -277,7 +276,7 @@
       "ram" : 10240,
       "storage" : 10000000,
       "bw" : 25000000,
-	  "datacenter": "netcloud",
+	  "datacenter": "netcloud"
     },
     {
       "name": "netcloudhost3",
@@ -287,7 +286,7 @@
       "ram" : 10240,
       "storage" : 10000000,
       "bw" : 25000000,
-	  "datacenter": "netcloud",
+	  "datacenter": "netcloud"
     },
     {
       "name": "netcloudhost4",
@@ -297,7 +296,7 @@
       "ram" : 10240,
       "storage" : 10000000,
       "bw" : 25000000,
-	  "datacenter": "netcloud",
+	  "datacenter": "netcloud"
     },
 	
 	
@@ -309,7 +308,7 @@
       "upports" : 0,
       "downports" : 2,
       "bw" : 25000000,
-	  "datacenter": "internet",
+	  "datacenter": "internet"
     },
 	{
       "name": "internetcore",
@@ -318,7 +317,7 @@
       "upports" : 0,
       "downports" : 2,
       "bw" : 2000000000,
-	  "datacenter": "internet",
+	  "datacenter": "internet"
     },
     {
       "name": "internetedge",
@@ -327,7 +326,7 @@
       "upports" : 1,
       "downports" : 4,
       "bw" : 2000000000,
-	  "datacenter": "internet",
+	  "datacenter": "internet"
     },
     {
       "name": "internethost",
@@ -337,8 +336,8 @@
       "ram" : 10240,
       "storage" : 10000000,
       "bw" : 25000000,
-	  "datacenter": "internet",
-    },
+	  "datacenter": "internet"
+    }
   ],
   "links" : [
 	
@@ -373,6 +372,6 @@
   
     { "source" : "internetgw" , "destination" : "internetcore" , "latency" : 1.0 },
     { "source" : "internetcore" , "destination" : "internetedge" , "latency" : 1.0 },
-    { "source" : "internetedge" , "destination" : "internethost" , "latency" : 1.0 },
+    { "source" : "internetedge" , "destination" : "internethost" , "latency" : 1.0 }
   ]
 }
