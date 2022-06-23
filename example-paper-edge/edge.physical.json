@@ -1,31 +1,63 @@
 {
   "nodes": [
     {
-      "name": "core",
+      "name": "core0",
       "type": "core",
       "iops": 1000000000,
       "upports": 0,
       "downports": 2,
-      "bw": 12500000
+      "bw": 7000000
+    },
+    {
+      "name": "core1",
+      "type": "core",
+      "iops": 1000000000,
+      "upports": 1,
+      "downports": 2,
+      "bw": 7000000
+    },
+    {
+      "name": "core2",
+      "type": "core",
+      "iops": 1000000000,
+      "upports": 1,
+      "downports": 2,
+      "bw": 10000000
     },
     {
       "name": "edge1",
       "type": "edge",
       "iops": 1000000000,
       "upports": 1,
-      "downports": 4,
-      "bw": 12500000
+      "downports": 2,
+      "bw": 8000000
     },
     {
       "name": "edge2",
       "type": "edge",
       "iops": 1000000000,
       "upports": 1,
-      "downports": 4,
-      "bw": 12500000
+      "downports": 2,
+      "bw": 8000000
     },
     {
-      "name": "host01",
+      "name": "edge3",
+      "type": "edge",
+      "iops": 1000000000,
+      "upports": 1,
+      "downports": 3,
+      "bw": 8000000
+    },
+    {
+      "name": "userToManager",
+      "type": "edge",
+      "iops": 1000000000,
+      "upports": 1,
+      "downports": 1,
+      "bw": 8000000
+    },
+    {
+      "name": "server01",
       "type": "host",
       "pes": 1,
       "mips": 30000000,
@@ -34,7 +66,7 @@
       "bw": 12500000
     },
     {
-      "name": "host02",
+      "name": "server02",
       "type": "host",
       "pes": 1,
       "mips": 30000000,
@@ -43,7 +75,7 @@
       "bw": 12500000
     },
     {
-      "name": "host03",
+      "name": "server03",
       "type": "host",
       "pes": 1,
       "mips": 30000000,
@@ -52,9 +84,27 @@
       "bw": 12500000
     },
     {
-      "name": "host04",
+      "name": "server04",
       "type": "host",
       "pes": 1,
+      "mips": 30000000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 12500000
+    },
+    {
+      "name": "manager",
+      "type": "host",
+      "pes": 1,
+      "mips": 30000000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 12500000
+    },
+    {
+      "name": "usersHost",
+      "type": "host",
+      "pes": 10,
       "mips": 30000000,
       "ram": 10240,
       "storage": 10000000,
@@ -63,34 +113,82 @@
   ],
   "links": [
     {
-      "source": "core",
+      "source": "core0",
+      "destination": "core1",
+      "bandwidth": 0.1,
+      "latency": 0.1
+    },
+    {
+      "source": "core0",
+      "destination": "core2",
+      "bandwidth": 0.1,
+      "latency": 0.1
+    },
+    {
+      "source": "core1",
       "destination": "edge1",
-      "bandwidth": 0.1
+      "bandwidth": 0.1,
+      "latency": 0.1
     },
     {
-      "source": "core",
+      "source": "core1",
       "destination": "edge2",
-      "bandwidth": 0.1
+      "bandwidth": 0.1,
+      "latency": 0.1
+    },
+    {
+      "source": "core2",
+      "destination": "edge2",
+      "bandwidth": 0.1,
+      "latency": 0.1
+    },
+    {
+      "source": "core2",
+      "destination": "edge3",
+      "bandwidth": 0.1,
+      "latency": 0.1
     },
     {
       "source": "edge1",
-      "destination": "host01",
-      "bandwidth": 0.1
+      "destination": "server01",
+      "bandwidth": 0.1,
+      "latency": 0.1
     },
     {
       "source": "edge1",
-      "destination": "host02",
-      "bandwidth": 0.1
+      "destination": "server02",
+      "bandwidth": 0.1,
+      "latency": 0.1
     },
     {
       "source": "edge2",
-      "destination": "host03",
-      "bandwidth": 0.1
+      "destination": "server02",
+      "bandwidth": 0.1,
+      "latency": 0.1
     },
     {
       "source": "edge2",
-      "destination": "host04",
-      "bandwidth": 0.1
+      "destination": "usersHost",
+      "bandwidth": 0.1,
+      "latency": 0.1
+    },
+    {
+      "source": "edge3",
+      "destination": "usersHost",
+      "bandwidth": 0.1,
+      "latency": 0.1
+    },
+    {
+      "source": "edge3",
+      "destination": "server03",
+      "bandwidth": 0.1,
+      "latency": 0.1
+    },
+    {
+      "source": "edge3",
+      "destination": "server04",
+      "bandwidth": 0.1,
+      "latency": 0.1
     }
   ]
 }

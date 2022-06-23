@@ -1,48 +1,156 @@
-host01,5.0,0.0
-Switch: edge2,5.0,0.141297328
-host03,5.0,0.385368736
-host02,5.0,0.54706408
-host04,5.0,0.449574192
-Switch: edge1,5.0,0.54706408
-host01,10.0,0.0
-Switch: edge2,10.0,0.218939856
-host03,10.0,0.998800032
-host02,10.0,1.0
-host04,10.0,0.0
-Switch: edge1,10.0,1.0
-host01,15.0,0.0
-Switch: edge2,15.0,0.009648848
-host03,15.0,1.0
-host02,15.0,0.986951152
-host04,15.0,0.013048848
-Switch: edge1,15.0,0.986951152
-host01,20.0,0.0
-Switch: edge2,20.0,0.083506384
-host03,20.0,1.000536368
-host02,20.0,0.84701488
-host04,20.0,0.152985136
-Switch: edge1,20.0,0.84701488
-host01,25.0,0.0
-Switch: edge2,25.0,0.034356896
-host03,25.0,0.55434176
-host02,25.0,0.925375552
-host04,25.0,0.0
-Switch: edge1,25.0,0.925375552
-host01,30.0,0.0
-Switch: edge2,30.0,0.0
-host03,30.0,0.918894976
-host02,30.0,0.0
-host04,30.0,0.0
+Switch: edge1,5.0,0.0
+Switch: core2,5.0,0.006
+Switch: edge3,5.0,0.00525
+Switch: edge2,5.0,0.0
+server03,5.0,0.0
+usersHost,5.0,0.002
+Switch: edge2,5.0,0.0
+server02,5.0,0.0
+server04,5.0,0.0
+server01,5.0,0.0
+usersHost,5.0,0.01125
+Switch: core1,5.0,0.0
+server02,5.0,0.0
+Switch: edge1,10.0,0.0
+Switch: core2,10.0,0.004
+Switch: edge3,10.0,0.0035
+Switch: edge2,10.0,0.0
+server03,10.0,0.0
+usersHost,10.0,0.002
+Switch: edge2,10.0,0.0
+server02,10.0,0.0
+server04,10.0,0.0
+server01,10.0,0.0
+usersHost,10.0,0.0075
+Switch: core1,10.0,0.0
+server02,10.0,0.0
+Switch: edge1,15.0,0.0
+Switch: core2,15.0,0.006
+Switch: edge3,15.0,0.00525
+Switch: edge2,15.0,0.0
+server03,15.0,0.0
+usersHost,15.0,0.004
+Switch: edge2,15.0,0.0
+server02,15.0,0.0
+server04,15.0,0.0
+server01,15.0,0.0
+usersHost,15.0,0.0079418
+Switch: core1,15.0,0.0
+server02,15.0,0.0
+Switch: edge1,20.0,0.0
+Switch: core2,20.0,0.002
+Switch: edge3,20.0,0.00175
+Switch: edge2,20.0,0.0
+server03,20.0,0.0
+usersHost,20.0,0.004
+Switch: edge2,20.0,0.0
+server02,20.0,0.0
+server04,20.0,0.0
+server01,20.0,0.0
+usersHost,20.0,0.00175
+Switch: core1,20.0,0.0
+server02,20.0,0.0
+Switch: edge1,25.0,0.0
+Switch: core2,25.0,0.0
+Switch: edge3,25.0,0.0
+Switch: edge2,25.0,0.0
+server03,25.0,0.0
+usersHost,25.0,0.006
+Switch: edge2,25.0,0.0
+server02,25.0,0.0
+server04,25.0,0.0
+server01,25.0,0.0
+usersHost,25.0,0.0
+Switch: core1,25.0,0.0
+server02,25.0,0.0
 Switch: edge1,30.0,0.0
-host01,46.33437530928191,0.0
-Switch: edge2,46.33437530928191,0.0
-host03,46.33437530928191,0.0
-host02,46.33437530928191,0.0
-host04,46.33437530928191,0.0
-Switch: edge1,46.33437530928191,0.0
-host01,51.33437530928191,0.0
-Switch: edge2,51.33437530928191,0.0
-host03,51.33437530928191,0.0
-host02,51.33437530928191,0.0
-host04,51.33437530928191,0.0
-Switch: edge1,51.33437530928191,0.0
+Switch: core2,30.0,0.0
+Switch: edge3,30.0,0.0
+Switch: edge2,30.0,0.0
+server03,30.0,0.0
+usersHost,30.0,0.002
+Switch: edge2,30.0,0.0
+server02,30.0,0.0
+server04,30.0,0.0
+server01,30.0,0.0
+usersHost,30.0,0.0
+Switch: core1,30.0,0.0
+server02,30.0,0.0
+Switch: edge1,35.0,0.0
+Switch: core2,35.0,0.006
+Switch: edge3,35.0,0.00525
+Switch: edge2,35.0,0.0
+server03,35.0,0.0
+usersHost,35.0,0.0
+Switch: edge2,35.0,0.0
+server02,35.0,0.0
+server04,35.0,0.0
+server01,35.0,0.0
+usersHost,35.0,0.00725
+Switch: core1,35.0,0.0
+server02,35.0,0.0
+Switch: edge1,40.0,0.0
+Switch: core2,40.0,0.002
+Switch: edge3,40.0,0.00175
+Switch: edge2,40.0,0.0
+server03,40.0,0.0
+usersHost,40.0,0.006
+Switch: edge2,40.0,0.0
+server02,40.0,0.0
+server04,40.0,0.0
+server01,40.0,0.0
+usersHost,40.0,0.00575
+Switch: core1,40.0,0.0
+server02,40.0,0.0
+Switch: edge1,45.0,0.0
+Switch: core2,45.0,0.002
+Switch: edge3,45.0,0.00175
+Switch: edge2,45.0,0.0
+server03,45.0,0.0
+usersHost,45.0,0.004
+Switch: edge2,45.0,0.0
+server02,45.0,0.0
+server04,45.0,0.0
+server01,45.0,0.0
+usersHost,45.0,0.00375
+Switch: core1,45.0,0.0
+server02,45.0,0.0
+Switch: edge1,50.0,0.0
+Switch: core2,50.0,0.0
+Switch: edge3,50.0,0.0
+Switch: edge2,50.0,0.0
+server03,50.0,0.0
+usersHost,50.0,0.0
+Switch: edge2,50.0,0.0
+server02,50.0,0.0
+server04,50.0,0.0
+server01,50.0,0.0
+usersHost,50.0,0.0
+Switch: core1,50.0,0.0
+server02,50.0,0.0
+Switch: edge1,55.0,0.0
+Switch: core2,55.0,0.002
+Switch: edge3,55.0,0.00175
+Switch: edge2,55.0,0.0
+server03,55.0,0.0
+usersHost,55.0,0.004
+Switch: edge2,55.0,0.0
+server02,55.0,0.0
+server04,55.0,0.0
+server01,55.0,0.0
+usersHost,55.0,0.00175
+Switch: core1,55.0,0.0
+server02,55.0,0.0
+Switch: edge1,60.0,0.0
+Switch: core2,60.0,0.002
+Switch: edge3,60.0,0.00175
+Switch: edge2,60.0,0.0
+server03,60.0,0.0
+usersHost,60.0,0.004
+Switch: edge2,60.0,0.0
+server02,60.0,0.0
+server04,60.0,0.0
+server01,60.0,0.0
+usersHost,60.0,0.00175
+Switch: core1,60.0,0.0
+server02,60.0,0.0

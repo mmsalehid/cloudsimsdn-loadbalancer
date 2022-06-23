@@ -57,9 +57,9 @@ import org.cloudbus.cloudsim.sdn.policies.vmallocation.VmMigrationPolicy;
 public class StartExperimentSFC {
 	protected static String physicalTopologyFile 	= "dataset-energy/energy-physical.json";
 	protected static String deploymentFile 		= "dataset-energy/energy-virtual.json";
-	protected static String [] workload_files 			= { 
+	protected static String [] workload_files 			= {
 		"dataset-energy/energy-workload.csv",
-		//"sdn-example-workload-normal-user.csv",	
+		//"sdn-example-workload-normal-user.csv",
 		//"sdn-example-workload-prio-user-prio-ch.csv",
 		//"sdn-example-workload-prio-user-normal-ch.csv",
 		};
@@ -132,7 +132,7 @@ public class StartExperimentSFC {
 		
 		//1. Policy: MFF, LFF, ...
 		String policy = args[n++];
-		
+
 		String sfcOn = args[n++];
 		if("1".equals(sfcOn)) {
 			Configuration.SFC_AUTOSCALE_ENABLE = true;

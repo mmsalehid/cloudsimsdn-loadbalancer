@@ -1,0 +1,94 @@
+{
+  "nodes" : [
+    {
+      "name" : "user1",
+      "type" : "vm",
+      "size" : 100,
+      "pes": 1,
+      "mips" : 2000,
+      "ram"  : 10,
+      "host": "usersHost"
+    },
+    {
+      "name": "user2",
+      "type" : "vm",
+      "size" : 100,
+      "pes": 1,
+      "mips" : 2000,
+      "ram"  : 10,
+      "host": "usersHost"
+    },
+    {
+      "name": "user3",
+      "type" : "vm",
+      "size" : 100,
+      "pes": 1,
+      "mips" : 2000,
+      "ram"  : 10,
+      "host": "usersHost"
+    },
+    {
+      "name": "user4",
+      "type" : "vm",
+      "size" : 100,
+      "pes": 1,
+      "mips" : 2000,
+      "ram"  : 10,
+      "host": "usersHost"
+    },
+    {
+      "name": "user5",
+      "type" : "vm",
+      "size" : 100,
+      "pes": 1,
+      "mips" : 2000,
+      "ram"  : 10,
+      "host": "usersHost"
+    },
+    {
+      "name": "user6",
+      "type" : "vm",
+      "size" : 100,
+      "pes": 1,
+      "mips" : 2000,
+      "ram"  : 10,
+      "host": "usersHost"
+    },
+    {
+      "name": "user7",
+      "type" : "vm",
+      "size" : 100,
+      "pes": 1,
+      "mips" : 2000,
+      "ram"  : 10,
+      "host": "usersHost"
+    },
+    {
+      "name": "server1",
+      "type" : "server",
+      "size" : 100,
+      "pes": 1,
+      "mips" : 2000,
+      "ram"  : 10
+    },
+    {
+      "name": "manager",
+      "type" : "loadbalancer",
+      "size" : 1000,
+      "pes": 1,
+      "mips" : 1000,
+      "mipoper": 250,
+      "ram"  : 512,
+      "host" : "manager"
+    }
+  ],
+  "links" : [
+    { "name": "default", "source" : "user1" , "destination" : "server1" },
+    { "name": "default", "source" : "user2" , "destination" : "server1" },
+    { "name": "default", "source" : "user3" , "destination" : "server1" },
+    { "name": "default", "source" : "user4" , "destination" : "server1" },
+    { "name": "default", "source" : "user5" , "destination" : "server1" },
+    { "name": "default", "source" : "user6" , "destination" : "server1" },
+    { "name": "default", "source" : "user7" , "destination" : "server1" }
+  ]
+}
