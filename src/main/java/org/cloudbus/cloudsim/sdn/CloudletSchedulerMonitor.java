@@ -14,9 +14,14 @@ import org.cloudbus.cloudsim.Cloudlet;
 
 public interface CloudletSchedulerMonitor {
 	public long getTotalProcessingPreviousTime(double currentTime, List<Double> mipsShare);
+
 	public boolean isVmIdle();
+
 	public double getTimeSpentPreviousMonitoredTime(double currentTime);
-	
+
 	public int getCloudletTotalPesRequested();
+
 	public List<Cloudlet> getFailedCloudlet();
+
+	public int getCloudletsWaitingList();
 }

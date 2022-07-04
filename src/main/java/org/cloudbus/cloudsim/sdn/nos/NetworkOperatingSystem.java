@@ -90,6 +90,9 @@ public abstract class NetworkOperatingSystem extends SimEntity {
 	protected ServiceFunctionForwarder sfcForwarder;
 	protected ServiceFunctionAutoScaler sfcScaler;
 
+	protected int vmLoadHighBorder;
+	protected int vmLoadLowBoarder;
+
 	// Resolution of the result.
 	public static final long bandwidthWithinSameHost = 1500000000; // bandwidth between VMs within a same host: 12Gbps = 1.5GBytes/sec
 	public static final double latencyWithinSameHost = 0.1; //0.1 msec latency 
@@ -180,7 +183,28 @@ public abstract class NetworkOperatingSystem extends SimEntity {
 				this.updateBWMonitor(Configuration.monitoringTimeInterval);
 				this.updateHostMonitor(Configuration.monitoringTimeInterval);
 				this.updateSwitchMonitor(Configuration.monitoringTimeInterval);				
-				
+
+				List<Integer> overloadedVms = getFullVms();
+				List<Integer> underloadedVms = getEmptyVms();
+				LogWriter overloadedVmsLogger = LogWriter.getLogger("overloaded_vms.csv");
+				for (int vmId :overloadedVms){
+					Vm vm = this.vmMapId2Vm.get(vmId);
+					String vmName;
+					if (vm instanceof SDNVm){
+						vmName = ((SDNVm) vm).getName();
+					}
+					else{
+						vmName = "ERROR";
+					}
+					overloadedVmsLogger.printLine(CloudSim.clock() + "," + vmName);
+				}
+
+				Object[] data = new Object[2];
+				data[0] = overloadedVms;
+				data[1] = underloadedVms;
+
+
+
 				if(CloudSim.clock() >= lastMigration + Configuration.migrationTimeInterval && this.datacenter != null) {
 					sfcScaler.scaleSFC();	// Start SFC Auto Scaling
 					
@@ -189,8 +213,9 @@ public abstract class NetworkOperatingSystem extends SimEntity {
 					lastMigration = CloudSim.clock(); 
 				}
 				this.updateVmMonitor(CloudSim.clock());
-				
+
 				if(CloudSimEx.hasMoreEvent(CloudSimTagsSDN.MONITOR_UPDATE_UTILIZATION)) {
+					send(this.getId(), 0, CloudSimTagsSDN.MONITOR_VM_LOADS, data);
 					double nextMonitorDelay = Configuration.monitoringTimeInterval;
 					double nextEventDelay = CloudSimEx.getNextEventTime() - CloudSim.clock();
 					
@@ -328,7 +353,6 @@ public abstract class NetworkOperatingSystem extends SimEntity {
 			}
 			channelManager.addChannel(src, dst, flowId, channel);
 		}
-		
 		channel.addTransmission(new Transmission(pkt));
 //		Log.printLine(CloudSim.clock() + ": " + getName() + ".addPacketToChannel ("+channel
 //				+"): Transmission added:" + 
@@ -692,7 +716,32 @@ public abstract class NetworkOperatingSystem extends SimEntity {
 			}
 		}
 	}
-		
+
+	public List<Integer> getFullVms(){
+		List<Integer> fullVms = new ArrayList<>();
+		for (Vm v: this.vmMapId2Vm.values()){
+			SDNVm vm = (SDNVm)v;
+			if (vm.getMiddleboxType().equals("server")){
+				if (vm.getWaitingCloudletCount() >= this.vmLoadHighBorder){
+					fullVms.add(vm.getId());
+				}
+			}
+		}
+		return fullVms;
+	}
+
+	public List<Integer> getEmptyVms(){
+		List<Integer> emptyVms = new ArrayList<>();
+		for (Vm v: this.vmMapId2Vm.values()){
+			SDNVm vm = (SDNVm)v;
+			if (vm.getMiddleboxType().equals("server")){
+				if (vm.getWaitingCloudletCount() < this.vmLoadLowBoarder) {
+					emptyVms.add(vm.getId());
+				}
+			}
+		}
+		return emptyVms;
+	}
 	public Vm getSFForwarderOriginalVm(int vmId) {
 		return this.sfcForwarder.getOriginalSF(vmId);
 	}

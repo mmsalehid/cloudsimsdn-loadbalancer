@@ -118,4 +118,12 @@ public class Request {
 			ac.setFailedTime(time);
 		}
 	}
+
+	public Processing getNextProcessing(){
+		for(Activity act:activities) {
+			if(act instanceof Processing)
+				return (Processing) act;
+		}
+		return null;
+	}
 }

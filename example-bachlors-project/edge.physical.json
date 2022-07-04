@@ -1,0 +1,261 @@
+{
+  "nodes": [
+    {
+      "name": "core0",
+      "type": "core",
+      "iops": 500000,
+      "upports": 0,
+      "downports": 2,
+      "bw": 20000000
+    },
+    {
+      "name": "agg1",
+      "type": "aggregate",
+      "iops": 500000,
+      "upports": 1,
+      "downports": 2,
+      "bw": 20000000
+    },
+    {
+      "name": "agg2",
+      "type": "aggregate",
+      "iops": 500000,
+      "upports": 1,
+      "downports": 2,
+      "bw": 20000000
+    },
+    {
+      "name": "edge1",
+      "type": "edge",
+      "iops": 500000,
+      "upports": 1,
+      "downports": 3,
+      "bw": 20000000
+    },
+    {
+      "name": "edge2",
+      "type": "edge",
+      "iops": 500000,
+      "upports": 1,
+      "downports": 3,
+      "bw": 20000000
+    },
+    {
+      "name": "edge3",
+      "type": "edge",
+      "iops": 500000,
+      "upports": 1,
+      "downports": 3,
+      "bw": 20000000
+    },
+    {
+      "name": "edge4",
+      "type": "edge",
+      "iops": 500000,
+      "upports": 1,
+      "downports": 3,
+      "bw": 20000000
+    },
+    {
+      "name": "usersHost1",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    },
+    {
+      "name": "usersHost2",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    },
+    {
+      "name": "usersHost3",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    },
+    {
+      "name": "usersHost4",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    },
+    {
+      "name": "server01",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    },
+    {
+      "name": "server02",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    },
+    {
+      "name": "server03",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    },
+    {
+      "name": "server04",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    },
+    {
+      "name": "server05",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    },
+    {
+      "name": "server06",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    },
+    {
+      "name": "server07",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    },
+    {
+      "name": "server08",
+      "type": "host",
+      "pes": 1,
+      "mips": 12000,
+      "ram": 10240,
+      "storage": 10000000,
+      "bw": 20000000
+    }
+  ],
+  "links": [
+    {
+      "source": "core0",
+      "destination": "agg1",
+      "latency": 0.1
+    },
+    {
+      "source": "core0",
+      "destination": "agg2",
+      "bandwidth": 10000000,
+      "latency": 0.1
+    },
+    {
+      "source": "agg1",
+      "destination": "edge1",
+      "latency": 0.1
+    },
+    {
+      "source": "agg1",
+      "destination": "edge2",
+      "latency": 0.1
+    },
+    {
+      "source": "agg2",
+      "destination": "edge3",
+      "latency": 0.1
+    },
+    {
+      "source": "agg2",
+      "destination": "edge4",
+      "latency": 0.1
+    },
+    {
+      "source": "edge1",
+      "destination": "usersHost1",
+      "latency": 0.1
+    },
+    {
+      "source": "edge2",
+      "destination": "usersHost2",
+      "latency": 0.1
+    },
+    {
+      "source": "edge3",
+      "destination": "usersHost3",
+      "latency": 0.1
+    },
+    {
+      "source": "edge4",
+      "destination": "usersHost4",
+      "latency": 0.1
+    },
+    {
+      "source": "edge1",
+      "destination": "server01",
+      "latency": 0.1
+    },
+    {
+      "source": "edge2",
+      "destination": "server02",
+      "latency": 0.1
+    },
+    {
+      "source": "edge3",
+      "destination": "server03",
+      "latency": 0.1
+    },
+    {
+      "source": "edge4",
+      "destination": "server04",
+      "latency": 0.1
+    },
+    {
+      "source": "edge1",
+      "destination": "server05",
+      "latency": 0.1
+    },
+    {
+      "source": "edge2",
+      "destination": "server06",
+      "latency": 0.1
+    },
+    {
+      "source": "edge3",
+      "destination": "server07",
+      "latency": 0.1
+    },
+    {
+      "source": "edge4",
+      "destination": "server08",
+      "latency": 0.1
+    }
+  ]
+}

@@ -106,5 +106,8 @@ public class CloudletSchedulerTimeSharedMonitor extends CloudletSchedulerTimeSha
 			getCloudletExecList().removeAll(timeoutCloudlet);			
 		}
 		
-	}	
+	}
+	public int getCloudletsWaitingList(){
+		return super.cloudletWaitingList.size();
+	}
 }

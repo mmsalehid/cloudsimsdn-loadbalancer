@@ -2,6 +2,7 @@ package org.cloudbus.cloudsim.sdn.policies.vmallocation;
 
 import org.cloudbus.cloudsim.CloudletScheduler;
 import org.cloudbus.cloudsim.Host;
+import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.sdn.CloudletSchedulerSpaceSharedMonitor;
 import org.cloudbus.cloudsim.sdn.Configuration;
@@ -20,11 +21,11 @@ public class VmForwarder{
     Map <Integer, List<Integer>> vmPool;
     Map <Integer, Integer> vmToOrgVmMap;
 
+
     public VmForwarder(NetworkOperatingSystem nos){
         this.nos = nos;
         vmPool = new HashMap<>();
         vmToOrgVmMap = new HashMap<>();
-
     }
 
     public SDNVm createAndAddVmReplica(SDNVm orgVm, String newVmHost){
@@ -47,6 +48,7 @@ public class VmForwarder{
         } else {
             vmToOrgVmMap.put(orgVmId, orgVmId);
             List<Integer> orgVmReplicas = new ArrayList<>();
+            orgVmReplicas.add(orgVmId);
             orgVmReplicas.add(newVm.getId());
             vmPool.put(orgVmId, orgVmReplicas);
         }
@@ -79,8 +81,33 @@ public class VmForwarder{
     public int getNextRandomDestinationVm(int destinationVmId) {
         Random randomGenerator = new Random();
         int numOfReplicas = vmPool.get(destinationVmId).size();
+        List<Integer> availableVmList;
+        if (numOfReplicas == 0){
+            availableVmList = new ArrayList<>(vmToOrgVmMap.keySet());
+            numOfReplicas = availableVmList.size();
+        }
+        else{
+            availableVmList = vmPool.get(destinationVmId);
+        }
         int newDestIndex = randomGenerator.nextInt(numOfReplicas);
-        int newDestinationVmId = vmPool.get(destinationVmId).get(newDestIndex);
+        int newDestinationVmId = availableVmList.get(newDestIndex);
         return newDestinationVmId;
+    }
+
+    public void updateVmPool(List <Integer> overloadedVmList, List<Integer> underloadedVmList) {
+        for(Integer vmId: overloadedVmList){
+            Integer orgVm = vmToOrgVmMap.get(vmId);
+            List<Integer> vms = vmPool.get(orgVm);
+            vms.remove(vmId);
+
+        }
+        for (Integer vmId: underloadedVmList){
+            Integer orgVm = vmToOrgVmMap.get(vmId);
+            List <Integer> vms = vmPool.get(orgVm);
+            if (!vms.contains(vmId)){
+                vms.add(vmId);
+            }
+        }
+        Log.printLine(vmPool);
     }
 }

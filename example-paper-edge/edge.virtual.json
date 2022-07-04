@@ -67,8 +67,8 @@
       "name": "server1",
       "type" : "server",
       "size" : 100,
-      "pes": 1,
-      "mips" : 2000,
+      "pes": 8,
+      "mips" : 10000,
       "ram"  : 10
     },
     {

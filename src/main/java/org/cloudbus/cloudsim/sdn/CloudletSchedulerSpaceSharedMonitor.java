@@ -128,4 +128,8 @@ public class CloudletSchedulerSpaceSharedMonitor extends CloudletSchedulerSpaceS
 		return super.cloudletExecList.size() + super.cloudletFailedList.size() + super.getCloudletFinishedList().size() +
 				super.cloudletPausedList.size() + super.cloudletWaitingList.size();
 	}
+
+	public int getCloudletsWaitingList(){
+		return super.cloudletWaitingList.size();
+	}
 }

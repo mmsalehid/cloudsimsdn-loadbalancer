@@ -12,6 +12,7 @@ import java.util.List;
 
 import org.cloudbus.cloudsim.CloudletScheduler;
 import org.cloudbus.cloudsim.Consts;
+import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.sdn.CloudletSchedulerMonitor;
@@ -141,6 +142,14 @@ public class SDNVm extends Vm {
 		}
 		return currentRequestedMips;
 	}
+
+	public Integer getWaitingCloudletCount(){
+		if (getCloudletScheduler() instanceof CloudletSchedulerMonitor){
+			CloudletSchedulerMonitor cls = (CloudletSchedulerMonitor)getCloudletScheduler();
+			return cls.getCloudletsWaitingList();
+		}
+		else return -1;
+	}
 	
 	// For monitor
 	private MonitoringValues mvCPU = new MonitoringValues(MonitoringValues.ValueType.Utilization_Percentage);
@@ -165,7 +174,10 @@ public class SDNVm extends Vm {
 		mvCPU.add(utilization, logTime);
 		monitoringProcessedMIsPerUnit = 0;
 		monitoringGivenMIsPerUnit = 0;
-		
+		if (this.getName().startsWith("server")) {
+			LogWriter queueLog = LogWriter.getLogger("vm_cloudlet_queue.csv");
+			queueLog.printLine(this.getName()+","+logTime+","+this.getWaitingCloudletCount());
+		}
 		LogWriter log = LogWriter.getLogger("vm_utilization.csv");
 		log.printLine(this.getName()+","+logTime+","+utilization);
 	}

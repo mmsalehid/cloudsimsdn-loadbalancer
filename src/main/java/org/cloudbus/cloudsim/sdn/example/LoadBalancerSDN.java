@@ -22,10 +22,10 @@ import org.cloudbus.cloudsim.sdn.workload.Workload;
 import java.util.*;
 
 public class LoadBalancerSDN {
-    protected static String physicalTopologyFile 	= "example-paper-edge/edge.physical.json";
-    protected static String deploymentFile 		= "example-paper-edge/edge.virtual.json";
+    protected static String physicalTopologyFile 	= "example-bachlors-project/edge.physical.json";
+    protected static String deploymentFile 		= "example-bachlors-project/edge.virtual.json";
     protected static String [] workload_files 			= {
-            "example-paper-edge/workload.csv"
+            "example-bachlors-project/workload.csv"
     };
 
     protected static List<String> workloads;

@@ -1,156 +1,234 @@
-Switch: edge1,5.0,0.0
-Switch: core2,5.0,0.006
-Switch: edge3,5.0,0.00525
-Switch: edge2,5.0,0.0
-server03,5.0,0.0
-usersHost,5.0,0.002
-Switch: edge2,5.0,0.0
+usersHost4,5.0,0.37800004
 server02,5.0,0.0
-server04,5.0,0.0
 server01,5.0,0.0
-usersHost,5.0,0.01125
-Switch: core1,5.0,0.0
-server02,5.0,0.0
-Switch: edge1,10.0,0.0
-Switch: core2,10.0,0.004
-Switch: edge3,10.0,0.0035
-Switch: edge2,10.0,0.0
-server03,10.0,0.0
-usersHost,10.0,0.002
-Switch: edge2,10.0,0.0
+server05,5.0,0.0
+usersHost3,5.0,0.39804466
+server03,5.0,0.0
+usersHost2,5.0,0.37637226
+server06,5.0,0.0
+server07,5.0,0.0
+Switch: edge4,5.0,0.27895506
+Switch: edge2,5.0,0.25969156
+Switch: agg2,5.0,0.35190539
+server08,5.0,0.0
+Switch: agg1,5.0,0.32638259
+usersHost1,5.0,0.3362399
+Switch: edge3,5.0,0.29306146
+server04,5.0,0.0
+Switch: edge1,5.0,0.25464014
+usersHost4,10.0,0.38352476
 server02,10.0,0.0
-server04,10.0,0.0
 server01,10.0,0.0
-usersHost,10.0,0.0075
-Switch: core1,10.0,0.0
-server02,10.0,0.0
-Switch: edge1,15.0,0.0
-Switch: core2,15.0,0.006
-Switch: edge3,15.0,0.00525
-Switch: edge2,15.0,0.0
-server03,15.0,0.0
-usersHost,15.0,0.004
-Switch: edge2,15.0,0.0
+server05,10.0,0.0
+usersHost3,10.0,0.37296486
+server03,10.0,0.0
+usersHost2,10.0,0.37009745
+server06,10.0,0.0
+server07,10.0,0.0
+Switch: edge4,10.0,0.2720114
+Switch: edge2,10.0,0.30089032
+Switch: agg2,10.0,0.42970999
+server08,10.0,0.0
+Switch: agg1,10.0,0.36331455
+usersHost1,10.0,0.31992345
+Switch: edge3,10.0,0.30741968
+server04,10.0,0.0
+Switch: edge1,10.0,0.26708862
+usersHost4,15.0,0.37672722
 server02,15.0,0.0
-server04,15.0,0.0
 server01,15.0,0.0
-usersHost,15.0,0.0079418
-Switch: core1,15.0,0.0
-server02,15.0,0.0
-Switch: edge1,20.0,0.0
-Switch: core2,20.0,0.002
-Switch: edge3,20.0,0.00175
-Switch: edge2,20.0,0.0
-server03,20.0,0.0
-usersHost,20.0,0.004
-Switch: edge2,20.0,0.0
+server05,15.0,0.0
+usersHost3,15.0,0.36417996
+server03,15.0,0.0
+usersHost2,15.0,0.42733135
+server06,15.0,0.0
+server07,15.0,0.0
+Switch: edge4,15.0,0.28511875
+Switch: edge2,15.0,0.32277959
+Switch: agg2,15.0,0.41284017
+server08,15.0,0.0
+Switch: agg1,15.0,0.39588492
+usersHost1,15.0,0.38535402
+Switch: edge3,15.0,0.25416795
+server04,15.0,0.0
+Switch: edge1,15.0,0.27906345
+usersHost4,20.0,0.28658909
 server02,20.0,0.0
-server04,20.0,0.0
 server01,20.0,0.0
-usersHost,20.0,0.00175
-Switch: core1,20.0,0.0
-server02,20.0,0.0
-Switch: edge1,25.0,0.0
-Switch: core2,25.0,0.0
-Switch: edge3,25.0,0.0
-Switch: edge2,25.0,0.0
-server03,25.0,0.0
-usersHost,25.0,0.006
-Switch: edge2,25.0,0.0
+server05,20.0,0.0
+usersHost3,20.0,0.33695211
+server03,20.0,0.0
+usersHost2,20.0,0.32376672
+server06,20.0,0.0
+server07,20.0,0.0
+Switch: edge4,20.0,0.19781205
+Switch: edge2,20.0,0.21067334
+Switch: agg2,20.0,0.26082184
+server08,20.0,0.0
+Switch: agg1,20.0,0.33656516
+usersHost1,20.0,0.40675351
+Switch: edge3,20.0,0.24321346
+server04,20.0,0.0
+Switch: edge1,20.0,0.30701926
+usersHost4,25.0,0.3527797
 server02,25.0,0.0
-server04,25.0,0.0
 server01,25.0,0.0
-usersHost,25.0,0.0
-Switch: core1,25.0,0.0
-server02,25.0,0.0
-Switch: edge1,30.0,0.0
-Switch: core2,30.0,0.0
-Switch: edge3,30.0,0.0
-Switch: edge2,30.0,0.0
-server03,30.0,0.0
-usersHost,30.0,0.002
-Switch: edge2,30.0,0.0
+server05,25.0,0.0
+usersHost3,25.0,0.42738374
+server03,25.0,0.0
+usersHost2,25.0,0.35475826
+server06,25.0,0.0
+server07,25.0,0.0
+Switch: edge4,25.0,0.31501455
+Switch: edge2,25.0,0.26712038
+Switch: agg2,25.0,0.46542159
+server08,25.0,0.0
+Switch: agg1,25.0,0.4199191
+usersHost1,25.0,0.3528685
+Switch: edge3,25.0,0.33059484
+server04,25.0,0.0
+Switch: edge1,25.0,0.289395
+usersHost4,30.0,0.33502661
 server02,30.0,0.0
-server04,30.0,0.0
 server01,30.0,0.0
-usersHost,30.0,0.0
-Switch: core1,30.0,0.0
-server02,30.0,0.0
-Switch: edge1,35.0,0.0
-Switch: core2,35.0,0.006
-Switch: edge3,35.0,0.00525
-Switch: edge2,35.0,0.0
-server03,35.0,0.0
-usersHost,35.0,0.0
-Switch: edge2,35.0,0.0
+server05,30.0,0.0
+usersHost3,30.0,0.38325539
+server03,30.0,0.0
+usersHost2,30.0,0.36191784
+server06,30.0,0.0
+server07,30.0,0.0
+Switch: edge4,30.0,0.26409163
+Switch: edge2,30.0,0.27141118
+Switch: agg2,30.0,0.35789965
+server08,30.0,0.0
+Switch: agg1,30.0,0.41278331
+usersHost1,30.0,0.39719634
+Switch: edge3,30.0,0.30304444
+server04,30.0,0.0
+Switch: edge1,30.0,0.30591522
+usersHost4,35.0,0.34992881
 server02,35.0,0.0
-server04,35.0,0.0
 server01,35.0,0.0
-usersHost,35.0,0.00725
-Switch: core1,35.0,0.0
-server02,35.0,0.0
-Switch: edge1,40.0,0.0
-Switch: core2,40.0,0.002
-Switch: edge3,40.0,0.00175
-Switch: edge2,40.0,0.0
-server03,40.0,0.0
-usersHost,40.0,0.006
-Switch: edge2,40.0,0.0
+server05,35.0,0.0
+usersHost3,35.0,0.33793281
+server03,35.0,0.0
+usersHost2,35.0,0.34507455
+server06,35.0,0.0
+server07,35.0,0.0
+Switch: edge4,35.0,0.2555626
+Switch: edge2,35.0,0.27310667
+Switch: agg2,35.0,0.36583624
+server08,35.0,0.0
+Switch: agg1,35.0,0.33097049
+usersHost1,35.0,0.32032902
+Switch: edge3,35.0,0.26382286
+server04,35.0,0.0
+Switch: edge1,35.0,0.25135747
+usersHost4,40.0,0.42823513
 server02,40.0,0.0
-server04,40.0,0.0
 server01,40.0,0.0
-usersHost,40.0,0.00575
-Switch: core1,40.0,0.0
-server02,40.0,0.0
-Switch: edge1,45.0,0.0
-Switch: core2,45.0,0.002
-Switch: edge3,45.0,0.00175
-Switch: edge2,45.0,0.0
-server03,45.0,0.0
-usersHost,45.0,0.004
-Switch: edge2,45.0,0.0
+server05,40.0,0.0
+usersHost3,40.0,0.33482397
+server03,40.0,0.0
+usersHost2,40.0,0.36842899
+server06,40.0,0.0
+server07,40.0,0.0
+Switch: edge4,40.0,0.31492887
+Switch: edge2,40.0,0.30003315
+Switch: agg2,40.0,0.3963721
+server08,40.0,0.0
+Switch: agg1,40.0,0.46081936
+usersHost1,40.0,0.35012308
+Switch: edge3,40.0,0.27562981
+server04,40.0,0.0
+Switch: edge1,40.0,0.26913107
+usersHost4,45.0,0.35036655
 server02,45.0,0.0
-server04,45.0,0.0
 server01,45.0,0.0
-usersHost,45.0,0.00375
-Switch: core1,45.0,0.0
-server02,45.0,0.0
-Switch: edge1,50.0,0.0
-Switch: core2,50.0,0.0
-Switch: edge3,50.0,0.0
-Switch: edge2,50.0,0.0
-server03,50.0,0.0
-usersHost,50.0,0.0
-Switch: edge2,50.0,0.0
+server05,45.0,0.0
+usersHost3,45.0,0.37931757
+server03,45.0,0.0
+usersHost2,45.0,0.37471003
+server06,45.0,0.0
+server07,45.0,0.0
+Switch: edge4,45.0,0.27056744
+Switch: edge2,45.0,0.26278199
+Switch: agg2,45.0,0.37931685
+server08,45.0,0.0
+Switch: agg1,45.0,0.32850245
+usersHost1,45.0,0.33198665
+Switch: edge3,45.0,0.28555314
+server04,45.0,0.0
+Switch: edge1,45.0,0.25459043
+usersHost4,50.0,0.37264788
 server02,50.0,0.0
-server04,50.0,0.0
 server01,50.0,0.0
-usersHost,50.0,0.0
-Switch: core1,50.0,0.0
-server02,50.0,0.0
-Switch: edge1,55.0,0.0
-Switch: core2,55.0,0.002
-Switch: edge3,55.0,0.00175
-Switch: edge2,55.0,0.0
-server03,55.0,0.0
-usersHost,55.0,0.004
-Switch: edge2,55.0,0.0
+server05,50.0,0.0
+usersHost3,50.0,0.33092171
+server03,50.0,0.0
+usersHost2,50.0,0.37674165
+server06,50.0,0.0
+server07,50.0,0.0
+Switch: edge4,50.0,0.29351165
+Switch: edge2,50.0,0.26881741
+Switch: agg2,50.0,0.37153054
+server08,50.0,0.0
+Switch: agg1,50.0,0.33093404
+usersHost1,50.0,0.37626248
+Switch: edge3,50.0,0.25141897
+server04,50.0,0.0
+Switch: edge1,50.0,0.24698226
+usersHost4,55.0,0.34040681
 server02,55.0,0.0
-server04,55.0,0.0
 server01,55.0,0.0
-usersHost,55.0,0.00175
-Switch: core1,55.0,0.0
-server02,55.0,0.0
-Switch: edge1,60.0,0.0
-Switch: core2,60.0,0.002
-Switch: edge3,60.0,0.00175
-Switch: edge2,60.0,0.0
-server03,60.0,0.0
-usersHost,60.0,0.004
-Switch: edge2,60.0,0.0
+server05,55.0,0.0
+usersHost3,55.0,0.3295217
+server03,55.0,0.0
+usersHost2,55.0,0.37702288
+server06,55.0,0.0
+server07,55.0,0.0
+Switch: edge4,55.0,0.26770639
+Switch: edge2,55.0,0.27820306
+Switch: agg2,55.0,0.34781491
+server08,55.0,0.0
+Switch: agg1,55.0,0.33345539
+usersHost1,55.0,0.32602003
+Switch: edge3,55.0,0.25754257
+server04,55.0,0.0
+Switch: edge1,55.0,0.24282624
+usersHost4,60.0,0.39877671
 server02,60.0,0.0
-server04,60.0,0.0
 server01,60.0,0.0
-usersHost,60.0,0.00175
-Switch: core1,60.0,0.0
-server02,60.0,0.0
+server05,60.0,0.0
+usersHost3,60.0,0.37852507
+server03,60.0,0.0
+usersHost2,60.0,0.34434652
+server06,60.0,0.0
+server07,60.0,0.0
+Switch: edge4,60.0,0.30523699
+Switch: edge2,60.0,0.28326421
+Switch: agg2,60.0,0.38377038
+server08,60.0,0.0
+Switch: agg1,60.0,0.43062754
+usersHost1,60.0,0.4130938
+Switch: edge3,60.0,0.27454249
+server04,60.0,0.0
+Switch: edge1,60.0,0.31638748
+usersHost4,65.0,0.0
+server02,65.0,0.0
+server01,65.0,0.0
+server05,65.0,0.0
+usersHost3,65.0,0.00365804
+server03,65.0,0.0
+usersHost2,65.0,0.0
+server06,65.0,0.0
+server07,65.0,0.0
+Switch: edge4,65.0,0.0
+Switch: edge2,65.0,0.0
+Switch: agg2,65.0,0.00365804
+server08,65.0,0.0
+Switch: agg1,65.0,0.00232902
+usersHost1,65.0,0.00665804
+Switch: edge3,65.0,0.00365804
+server04,65.0,0.0
+Switch: edge1,65.0,0.00665804
